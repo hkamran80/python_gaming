@@ -1,9 +1,11 @@
 from random import choice
-word = 'harry potter'
-guesses_left = len(word) + 1
+books = ('harry potter', 'percy jackson', 'legend', 'artemis fowl')
+word = choice(books)
+guesses_left = len(word)
 correct = set()
 incorrect = set()
 name = input('What is your name?')
+print(name,',', 'you have', guesses_left, 'left.')
 
 while guesses_left:
     print('You have', guesses_left, 'guesses left.')
